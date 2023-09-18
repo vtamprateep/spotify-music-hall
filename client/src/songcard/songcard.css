@@ -1,0 +1,48 @@
+:root {
+    --sizing: 180px;
+}
+
+.base {
+    height: 341px;
+    width: 260px;
+    background-color: var(--light-accent);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.album {
+    height: var(--sizing);
+    width: var(--sizing);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    margin: 0px 0px 10px 0px;
+}
+
+.centerContainer {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 40px);
+}
+
+.songcardContainer {
+    max-width: var(--sizing);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h3, h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.music {
+    margin-top: 20px;
+    width: 100%;
+}

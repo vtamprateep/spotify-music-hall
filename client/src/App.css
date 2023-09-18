@@ -1,0 +1,163 @@
+:root {
+  --bg-color: #373232;
+  --dark-accent: #241C1C;
+  --light-accent: #2D2626;
+  --text-light: #FFFFFF;
+  --medium: #d7d2d0;
+  --text-dark: #AFABAA;
+  --green: #77D886;
+  --red: #D87777;
+}
+
+html, body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  color: var(--text-dark);
+  font-family: "Inter";
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.contain-2 {
+  max-width: calc(100vw - 250px);
+  width: 85%;
+  margin-top: 70px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.topBar {
+  background-color: var(--light-accent);
+  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-right: 20px;
+}
+
+.routePanel {
+  margin: 30px;
+  max-width: 90%;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  color: var(--text-light);
+  font-size: 50px;
+  margin: 0px;
+}
+
+h2 {
+  font-weight: bold;
+  color: var(--text-light);
+  font-size: 25px;
+}
+
+h3 {
+  color: var(--text-light);
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+p {
+  text-align: left;
+}
+
+hr {
+  background-color: var(--bg-color);
+  height: 1px;
+}
+
+button {
+  background-color: var(--text-dark);
+  color: var(--light-accent);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin: 0px 3px;
+  font-weight: bold;
+  font-family: "Inter";
+  font-size: 16px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--medium);
+  color: var(--dark-accent);
+  transition: all 0.25s;
+}
+
+button:active {
+  background-color: var(--text-light);
+  color: var(--dark-accent);
+  transition: all 0.25s;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  background-color: var(--light-accent);
+  color: var(--text-light);
+  width: calc(100% - 40px);
+  padding: 5px 20px;
+  box-shadow: none;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
+  color: var(--text-dark);
+}
+
+audio {
+  width: 100%;
+}
+
+.nameDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameDisplay p {
+  margin-right: 10px;
+}

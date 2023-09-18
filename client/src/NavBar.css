@@ -1,0 +1,100 @@
+.navBackground {
+    background-color: var(--dark-accent);
+    min-width: 250px;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 2;
+}
+
+a.active {
+    background-color: transparent;
+}
+
+.navBox {
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 15px 0px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.25s;
+}
+
+.navIcon {
+    transition: background-color 0.25s;
+}
+
+.navBox:hover {
+    color: var(--text-light);
+    transition: color 0.25s;
+}
+
+.navBox:hover > .navIcon {
+    background: var(--text-light);
+}
+
+.isactive {
+    color: var(--text-light);
+}
+
+.isactive > .navIcon {
+    background: var(--text-light);
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 15%;
+    margin-top: 5%;
+}
+
+.logo {
+    height: 5vh;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg {
+    height: 45px;
+    margin-right: 15px;
+}
+
+.navIcon {
+    height: 30px;
+    width: 30px;
+    background: var(--text-dark);
+    mask-size: 30px;
+}
+
+.timeline {
+    mask-image: url('./assets/8664969_chart_line_analytics_icon.png');
+}
+
+.search {
+    mask-image: url('./assets/510861_find_magnifying glass_search_zoom_icon.png');
+}
+
+.playlist {
+    mask-image: url('./assets/9104257_shuffle_random_mix_icon.png');
+}
+
+.artistRand {
+    mask-image: url('./assets/8665642_microphone_lines_icon.png');
+}
+
+.venueRand {
+    mask-image: url('./assets/6613237_classic_concert_instrument_music_orchestra_icon.png');
+}
+
+.navWords {
+    margin-left: 20px;
+}
