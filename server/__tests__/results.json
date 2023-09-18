@@ -1,0 +1,14 @@
+{
+  "song" : {"songId":"123", 
+            "name":"Let It Be", 
+            "artistId":"1242"},
+  "album" : {"albumId":"55", 
+              "name":"Abbey Road"},
+  "artist" : {"artistId":"1234", 
+              "name":"The Beatles", 
+              "popularity":"99"},
+  "concert" : {"concertId":"777", 
+               "name":"The Beatles World Tour", 
+               "date":"3-10-1980",
+               "venue":"Madison Square Garden"}
+}
